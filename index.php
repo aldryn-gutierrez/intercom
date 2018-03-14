@@ -11,8 +11,9 @@ try {
     );
 
     $guestList = $guestListLibrary->getGuestList();
+
 } catch (\Exception $exception) {
-    echo $e->getMessage();
+    echo $exception->getMessage();
 }
 
 foreach ($guestList as $guest) {
